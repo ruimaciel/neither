@@ -2,11 +2,8 @@
 
 A functional implementation of Either in C++14.
 
-[![Travis](https://img.shields.io/travis/LoopPerfect/neither.svg)](https://travis-ci.org/LoopPerfect/neither) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/LoopPerfect/neither/master/license)
-
-```
-buckaroo add github.com/loopperfect/neither
-```
+This project is a fork of [LoopPerfect/neither](https://github.com/LoopPerfect/neither), with the sole goal of making the library available as a CMake project.
+Please give the original authors at [LoopPerfect](https://github.com/LoopPerfect/) a boat-load of kudos, as they released IMHO the best (by far) neither monad library written in C++.
 
 ## Examples
 
@@ -142,7 +139,7 @@ Some useful references:
 
 This library requires a C++ 14 compiler.
 
-Install with [Buckaroo](https://buckaroo.pm):
+While the original project required [Buckaroo](https://buckaroo.pm) as a dependency, this project allows users to install the library as a regular CMake project.
 
 ```
 buckaroo add github.com/loopperfect/neither
