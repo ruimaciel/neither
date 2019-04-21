@@ -9,25 +9,12 @@ addons:
     packages:
       - g++-6
       - gcc-6
-  homebrew:
-    taps:
-      - facebook/fb
-    packages:
-      - buck
+      - cmake
 
 os:
   - linux
-  - osx
-
-env:
-  - BUCKAROO_VERSION=buckaroo-redux-alpha-8
-
-osx_image: xcode9.3
-
-before_install:
-  - ./travis/before-install-$TRAVIS_OS_NAME.sh
 
 script:
-  - ./buckaroo-client install
-  - buck build -c ui.superconsole=DISABLED :neither
-  - buck test -c ui.superconsole=DISABLED //...
+  - mkdir build && cd build
+  - cmake ..
+  - make
