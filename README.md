@@ -1,6 +1,8 @@
-# neither
+# neither 
 
 A functional implementation of Either in C++14.
+
+[![Build Status](https://travis-ci.com/ruimaciel/neither.svg?branch=master)](https://travis-ci.com/ruimaciel/neither)
 
 This project is a fork of [LoopPerfect/neither](https://github.com/LoopPerfect/neither), with the sole goal of making the library available as a CMake project.
 Please give the original authors at [LoopPerfect](https://github.com/LoopPerfect/) a boat-load of kudos, as they released IMHO the best (by far) neither monad library written in C++.
