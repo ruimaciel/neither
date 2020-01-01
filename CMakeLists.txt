@@ -77,3 +77,8 @@ set(CPACK_PACKAGE_DESCRIPTION "A functional implementation of Either in C++14")
 set(CPACK_PACKAGE_CONTACT "Rui Maciel rui.maciel@gmail.com")
 
 include(CPack)
+
+option(RUN_TESTS "Run unit tests" OFF)
+if(RUN_TESTS)
+	add_subdirectory(tests)
+endif(RUN_TESTS)
