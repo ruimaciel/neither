@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
 # https://github.com/LoopPerfect/neither
 
 project(neither
-    VERSION 0.5.0.1
+    VERSION 0.5.0.2
     DESCRIPTION "Either and Maybe monads for better error-handling in C++"
     LANGUAGES CXX
     )
