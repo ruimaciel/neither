@@ -1,0 +1,19 @@
+name: C/C++ CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-18.04
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: create build directory
+      run: mkdir build
+    - name: configure
+      run: cmake .. -DRUN_TESTS=OFF
+      working-directory: ./build
+    - name: build
+      run: make
+      working-directory: ./build
