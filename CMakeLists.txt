@@ -74,6 +74,7 @@ set(CPACK_PACKAGE_VERSION_MAJOR ${PROJECT_VERSION_MAJOR})
 set(CPACK_PACKAGE_VERSION_MINOR ${PROJECT_VERSION_MINOR})
 set(CPACK_PACKAGE_VERSION_PATCH ${PROJECT_VERSION_PATCH})
 set(CPACK_PACKAGE_DESCRIPTION "A functional implementation of Either in C++14")
+set(CPACK_PACKAGE_HOMEPAGE_URL https://github.com/ruimaciel/neither)
 set(CPACK_PACKAGE_CONTACT "Rui Maciel rui.maciel@gmail.com")
 
 include(CPack)
