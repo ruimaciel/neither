@@ -24,6 +24,7 @@ jobs:
 
   test:
     runs-on: ubuntu-18.04
+    needs: build
     steps:
     - uses: actions/download-artifact@v1
       with:
