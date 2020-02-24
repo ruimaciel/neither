@@ -31,7 +31,16 @@ jobs:
         name: build
         path: build
     - name: make test executable
-      run: chmod +x ./build/tests/test_either
-    - name: run test
+      run: chmod +x ./build/tests/test_*
+    - name: test either
       run: ./test_either
+      working-directory: ./build/tests
+    - name: test lift
+      run: ./test_lift
+      working-directory: ./build/tests
+    - name: test try
+      run: ./test_try
+      working-directory: ./build/tests
+    - name: test maybe
+      run: ./test_maybe
       working-directory: ./build/tests
