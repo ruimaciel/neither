@@ -30,6 +30,8 @@ jobs:
       with:
         name: build
         path: build
+    - name: make test executable
+      run: chmod +x ./build/tests/test_either
     - name: run test
       run: ./test_either
       working-directory: ./build/tests
