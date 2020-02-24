@@ -30,4 +30,6 @@ jobs:
       with:
         name: build
         path: build
-    
+    - name: run test
+      run: ./test_either
+      working-directory: ./build/tests
